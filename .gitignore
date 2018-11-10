@@ -1,5 +1,3 @@
-
-## LaTeX ##
 *.log
 *.aux
 *.bbl
@@ -15,9 +13,4 @@
 *.gz
 *.bak
 *.html
-
 .idea/
-
-## Emacs ##
-
-*~
