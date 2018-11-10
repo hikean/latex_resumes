@@ -1,0 +1,176 @@
+
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+     % \textit{\small#3} & \textit{\small #4} \\
+      \small#3 & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\breakvspace}[1]{\pagebreak[2]\vspace{#1}\pagebreak[2]}
+\newcommand{\nobreakvspace}[1]{\nopagebreak[4]\vspace{#1}\nopagebreak[4]}
+\newcommand{\spacedhrule}[2]{\breakvspace{#1}\hrule\nobreakvspace{#2}}
+
+
+\newcommand{\projectSubheading}[3]{
+  \vspace{-1pt}\item
+    %\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1}   \hspace{\stretch{1}} \textbf{\small{#2}} \space \textit{\small #3} \vspace{-5pt}
+    %\end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\honorItem}[3]{
+  \item\small{
+    \textbf{#1}{: #2 \hspace{\stretch{1}} \textit{\small #3} \vspace{-6pt}}
+  }
+}
+\newcommand{\skillItem}[2]{
+  \item{
+    \textbf{#1}{:#2} \vspace{-5pt}
+  }
+}
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{http://www.XXXX.com/}{\Large \textbf{WANG DeFa}}} & Email : \href{mailto:XXXX@XXXX.com}{XXXX@XXXX.com}\\
+  \href{http://www.XXXX.com/}{http://www.XXXX.com} & Mobile : +86-156-XXXX-XXXX 
+ % \\
+\end{tabular*}
+
+%\spacedhrule{0.9em}{-0.4em}
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+    {XXXX University}{XXXX, CN}
+      {Master of Computer Software and Theory}{Sep. 2016 -- Jul. 2019}
+    \resumeSubheading
+      {XXXX University}{XXXX, CN}
+      {Bachelor of Computer Science and Technology \space GPA: 3.7/4.0  \space Ranking: 10/341}{Sep. 2012 -- Jul. 2016}
+  \resumeSubHeadingListEnd
+
+  \section{Honors \& Awards}
+  \resumeSubHeadingListStart
+    \honorItem{XXXX Prize}{XXXX Contest}{Nov. 2014}
+    \honorItem{XXXX Prize}{XXXX Contest}{Nov. 2014}
+    \honorItem{XXXX Prize}{XXXX Contest}{Nov. 2014}
+    \honorItem{XXXX Prize}{XXXX Contest}{Nov. 2014}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Internships}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {XXXX Company}{XXXX, CN}
+      {Intern of Software Developer}{Apr. 2017 - Jun. 2017}
+      \resumeItemListStart
+        \resumeItem{Dept.}
+          {XXXX Division}
+        \resumeItem{Job Duty}
+          {XXXX, XXXXXXXXXXXXXX}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {XXXX Company}{XXXX, CN}
+      {Intern of Software Developer}{Apr. 2017 - Jun. 2017}
+      \resumeItemListStart
+        \resumeItem{Dept.}
+          {XXXX Division}
+        \resumeItem{Job Duty}
+          {XXXX, XXXXXXXXXXXXXX}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\section{Projects}
+  \resumeSubHeadingListStart
+    \projectSubheading
+      {XXXXXXXXXXXXXX Project}{Core Developer}{Jul. 2017 - Oct. 2017}
+      \begin{itemize}
+        \item XXXXXXXXXXXXXX
+        \item XXXXXXXXXXXXXX
+      \end{itemize}
+
+    \projectSubheading
+      {XXXXXXXXXXXXXX Project}{Core Developer}{Jul. 2017 - Oct. 2017}
+      \begin{itemize}
+        \item XXXXXXXXXXXXXX
+        \item XXXXXXXXXXXXXX
+      \end{itemize}
+  \resumeSubHeadingListEnd
+
+
+%--------PROGRAMMING SKILLS------------
+\section{Programming Skills}
+ \resumeSubHeadingListStart
+    \item{Familiar with C/C++ programming, STL and C++11 features}\vspace{-5pt}
+    \item{Familiar with Python programming}\vspace{-5pt}
+    \item{Familiar with Linux development environment and related tools, and shell programming}\vspace{-5pt}
+ \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}

@@ -1,0 +1,111 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !Mode:: "TeX:UTF-8"
+
+\documentclass{style/resume_pic}
+    %\usepackage{style/zh_CN-Adobefonts_internal} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+    % \usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+    \usepackage{style/linespacing_fix} % disable extra space before next section
+    \usepackage{cite}
+    \usepackage{ctex}
+    \usepackage{graphicx}
+    
+    % \usepackage[slantfont,boldfont]{xeCJK}
+    % \usepackage{fontspec}
+    % \setCJKmainfont{SimSun}
+    % \setmainfont{SimSun}
+    % \setsansfont{SimSun}
+    % \usepackage{float}
+    % \usepackage{fontspec}
+    % \newfontfamily\zhfont[BoldFont=Adobe Heiti Std]{Adobe Song Std}
+    % \newfontfamily\zhpunctfont{Adobe Song Std}
+    % \setmainfont{Times New Roman}
+    % \usepackage{indentfirst}
+    % \usepackage{zhspacing}
+    % \zhspacing
+    
+    \begin{document}
+    \pagenumbering{gobble} % suppress displaying page number
+    
+    \begin{minipage}{0.65\textwidth}
+    \begingroup
+    \let\center\flushleft
+    \let\endcenter\endflushleft
+    \name{xxx}
+    \bigbreak
+    \phone{xxxxxxxxxxx}
+    \email{fengmengzhao@gmail.com}
+    \homepage{https://fmzhao.github.io}
+    \endgroup
+    \end{minipage}
+    \raggedleft{
+    \begin{minipage}{0.3\textwidth}
+    \flushright{\includegraphics[width=58pt]{resource/avatar}}
+    \end{minipage}
+    }
+    
+    
+    % {E-mail}{mobilephone}{homepage}
+    % be careful of _ in emaill address
+    %\contactInfo{fengmengzhao@gmail.com}{(+86) 187-284-63725}{https://fmzhao.github.io}
+    % {E-mail}{mobilephone}
+    % keep the last empty braces!
+    %\contactInfo{xxx@yuanbin.me}{(+86) 131-221-87xxx}{}
+    
+    \section{\faGraduationCap\ 学历 }
+    \datedsubsection{\textbf{xxxx大学}\ 成都}{xxxx -- 至今}
+    \raggedright{\fontsize{9pt}{11pt}{\textit{xxxx}\ xxxx \space xxxx}}
+    \datedsubsection{\textbf{xxxx大学}\ xxx}{xxxx -- xxxx}
+    \raggedright{\fontsize{9pt}{11pt}{\textit{xx}\ xxxx}}
+    
+    \bigbreak
+    
+    \section{\faGithub\ 项目 }
+    
+    \datedsubsection{\textbf{DSA}}{2016年05月 -- 至今}
+    %\role{\LaTeX, Python}{个人项目}
+    \begin{onehalfspacing}
+    % 优雅的 \LaTeX\ 简历模板, https://github.com/billryan/resume
+    \raggedright{\fontsize{9pt}{11pt}{\textit{xxxxxxxxxxxxxxxxxxxxx}}}
+    \begin{itemize}
+      \item xxxxxxxxxxxxxxxxxxxxx
+      \item xxxxxxxxxxxxxxxxxxxxx
+      \item xxxxxxxxxxxxxxx
+      \item xxxxxxxxxxxxxxx
+    \end{itemize}
+    \end{onehalfspacing}
+    
+    
+    \section{\faCogs\ IT 技能 }
+    % increase linespacing [parsep=0.5ex]
+    \begin{itemize}[parsep=0.5ex]
+      \item 编程语言：xxxx
+      \item 优化：xxxx
+      \item 平台：xxxx
+      \item 并发编程：xxxx
+    \end{itemize}
+    
+    \bigbreak
+    
+    \section{\faBug\ IT 兴趣 }
+    %\datedline{\textit{第一名}, xxx 比赛}{2013 年6 月}
+    %\datedline{其他奖项}{2015}
+    \begin{itemize}[parsep=0.5ex]
+      \item xxxxxxxxxxxx
+      \item xxxxxxxxxxxx
+    \end{itemize}
+    
+    \bigbreak
+    
+    \section{\faAt\ 自我评价}
+    % increase linespacing [parsep=0.5ex]
+    {\textbf{认知}}
+    \begin{onehalfspacing}
+    \begin{itemize}[parsep=0.5ex]
+      \item xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+      \item xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+    \end{itemize}
+    \end{onehalfspacing}
+    
+    \end{document}
+    

@@ -1,0 +1,127 @@
+% !TEX program = xelatex
+% This is my resume
+% Chinese translation
+
+\documentclass{style/resume}
+    \usepackage{style/linespacing_fix} % disable extra space before next section
+    \usepackage{cite}
+    \usepackage{ctex}
+    \usepackage{enumitem}
+    % \usepackage{paralist}
+    %\usepackage[colorlinks,linkcolor=blue]{hyperref}
+    
+    %\setmainfont[]{Sarasa Gothic SC}
+    \newcommand{\datestyle}[1]{
+        \normalsize #1
+    }
+    \newcommand{\education}[4]{
+        \subsection[#1]{\textbf{#1} \hspace{\stretch{1}} \textbf{\normalsize #2} \hspace{2em} \textbf{\normalsize #3} \hspace{1em} \datestyle{#4}}
+    }
+    \newcommand{\fitem}[1]{
+        \textbf{\indent \hspace{0.5em} \textbullet \space #1}
+    }
+    \newcommand{\internhead}[3]{
+        \subsection[#1]{\textbf{#1} \hspace{\stretch{1}} \textbf{\normalsize #2} \hspace{3em} \datestyle{#3}}
+    }
+    \newcommand{\projecthead}[2]{
+        \subsection[#1]{\textbf{#1} \hspace{\stretch{1}} \datestyle{#2}}
+    }
+    \newcommand{\paperhead}[2]{
+      \subsection[#1]{\normalsize \textbf{#1} \hspace{\stretch{1}} \datestyle{#2}}
+  }
+
+    \begin{document}
+    \pagenumbering{gobble} % suppress displaying page number
+    \hypersetup{
+        colorlinks=false,
+        pdfborder={0 0 0},
+    }
+    
+    \name{小明}
+    
+    \basicInfo{
+      \email{chengrui\_mars@163.com} \textperiodcentered\ 
+      \phone{156-0010-9566 } \textperiodcentered\ 
+    %   \github[wangdf]{https://github.com/wangdf} \textperiodcentered\
+      % \wechat{15600109566}
+      \blog{https://zhuanlan.zhihu.com/nevermore-nlp}{https://zhuanlan.zhihu.com/nevermore-nlp}
+      \hspace{\stretch{1}}
+      % 算法工程师
+    }
+    \vspace{-1em}
+    \section{\faGraduationCap\ 教育经历}
+   
+
+    \education{家里顿大学}{什么方向}{什么重点实验室}{2016.09 -- 2019.07}
+
+    \vspace{-6pt}
+
+ 
+
+    \education{什么大学}{什么专业 \hspace{9.5em} }{什么学院}{2012.09 -- 2016.07}
+
+    \section{\faGithubAlt\ 论文经历}
+    \paperhead{论文名字}{2018.01 -- 今}
+    \begin{itemize}
+      \item XXX会议，第一作者
+      \item 使用什么方法，做什么事情，取得什么效果
+    \end{itemize}
+
+  
+    \section{\faUsers\ 实习经历}
+
+    \internhead{什么公司}{什么工程师}{2018.06 -- 今}
+    \begin{itemize}
+      \item 负责什么部门，某某业务，相比于传统模型，将匹配的F1值提高19个点
+    \end{itemize}
+
+    \internhead{莫某公司}{Python工程师}{2015.11 -- 2016.01}
+    \begin{itemize}
+      \item 参与某某公司后台开发，负责数据库、缓存、消息队列等。
+    \end{itemize}
+
+    \section{\faGithubAlt\ 项目经历}
+    \projecthead{某某任务}{2018.01 -- 今}
+    \begin{itemize}
+      \item 根据巴拉巴拉巴拉巴拉巴拉巴拉，巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉。
+    \end{itemize}
+
+    \projecthead{某某任务}{2018.01 -- 今}
+    \begin{itemize}
+      \item 根据巴拉巴拉巴拉巴拉巴拉巴拉，巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉。
+    \end{itemize}
+
+    \projecthead{某某任务}{2018.01 -- 今}
+    \begin{itemize}
+      \item 根据巴拉巴拉巴拉巴拉巴拉巴拉，巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉。
+    \end{itemize}
+
+
+
+    \section{\faCertificate\ 奖励荣誉}
+    % \datedline{\textit{\nth{1} Prize}, Award on xxx }{Jun. 2013}
+    \begin{itemize}
+      \item 拉巴拉，巴拉巴拉巴拉巴拉巴拉巴拉巴拉大学优秀毕业生
+      \item 拉巴拉，巴拉巴拉巴拉巴拉巴拉巴拉巴拉数学建模竞赛二等奖
+    \end{itemize}
+
+
+
+
+    % \section{\faCogs\ 个人技能}
+    % \begin{itemize}[parsep=0.5ex]
+    %   \item 有丰富C/C++编程基础，熟悉C++11特性，熟悉Qt编程
+    % \end{itemize}
+    
+    
+    % \section{\faInfo\ 其他}
+    % \begin{itemize}[parsep=0.5ex]
+    %   \item 语言: English - 熟练 (托福 100)，汉语 - 母语水平
+    % \end{itemize}
+    
+    %% Reference
+    %\newpage
+    %\bibliographystyle{IEEETran}
+    %\bibliography{mycite}
+    \end{document}
+    

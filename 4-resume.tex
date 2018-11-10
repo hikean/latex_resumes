@@ -1,0 +1,73 @@
+% !TEX program = xelatex
+
+\documentclass{style/resume}
+%\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+\usepackage{style/zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+\name{WANG DeFa}
+
+\basicInfo{
+  \email{XXX@163.com} \textperiodcentered\ 
+  \phone{(+86) 156-XXXX-XXXX} \textperiodcentered\
+  \wechat{XXXX} \textperiodcentered\
+  \github[XXXX]{https://www.github.com/XXXX}}
+
+\section{\faGraduationCap\ Education}
+\datedsubsection{\textbf{XXXX University}}{2016 -- 2019}
+\textit{Master of Engineering} {in Computer Software and Theory,} {expected July 2019}
+\datedsubsection{\textbf{XXX University}, Jinlin, China}{2012 -- 2016}
+\textit{B.S.} in Computer Science and Technology GPA 3.7/4.0   Ranking top 5\%
+
+
+\section{\faUsers\ Experience}
+\datedsubsection{\textbf{FLAG Inc.} California, America}{2012 -- Present}
+\role{Summer Intern}{Manager: xxx}
+\vspace{-10pt}
+\begin{itemize}
+  \item xxx
+\end{itemize}
+
+\section{\faCogs\ Skills}
+\begin{itemize}[parsep=0.5ex]
+  \item Programming Languages: C == Python > C++ > Java
+\end{itemize}
+
+\section{\faCertificate \ Honors and Awards}
+\datedline{\textit{\nth{1} Prize}, Award on xxx }{Jun. 2013}
+
+\section{\faInfo\ Miscellaneous}
+\begin{itemize}[parsep=0.5ex]
+  \item Languages: English - Fluent, Mandarin - Native speaker啊多少发生的
+\end{itemize}
+
+%% Reference
+%\newpage
+%\bibliographystyle{IEEETran}
+%\bibliography{mycite}
+\end{document}

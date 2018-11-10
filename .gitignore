@@ -1,0 +1,23 @@
+
+## LaTeX ##
+*.log
+*.aux
+*.bbl
+*.blg
+*.synctex.gz
+*.out
+*.toc
+*.lof
+*.idx
+*.ilg
+*.ind
+*.pdf
+*.gz
+*.bak
+*.html
+
+.idea/
+
+## Emacs ##
+
+*~
